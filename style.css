@@ -1,0 +1,56 @@
+body {
+	
+}
+
+.principal {
+	background: #CCCCCC;
+	padding: 30px;
+}
+#banner {
+	width: 100%; /*colocando a largura da imagem em 100% da página*/
+}
+
+.principal-title {
+	padding-left: 20px;
+}
+
+
+.text-center{
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+/*para referenciar um id em css é usado o #(hashtag) + nome do id*/
+#missao {
+	font-size: 20px;
+}
+
+/*busca o que tem dentro de <em> com a tag <strong> para colocar em azul*/
+em strong {
+	color: blue;
+}
+
+/*para referenciar uma classe em css é usado o .(ponto) + nome da classe*/
+.itens {
+	font-style: italic;
+}
+
+.beneficios {
+	background: white;
+	padding: 20px; /*adiciona espaçamento em todos os lados*/
+}
+
+ul {
+	display: inline-block; /*coloca a imagem na mesma linha da lista*/
+	vertical-align: top; /*eleva a lista para o top */
+	width: 20%;
+	margin-right: 15%; /*adiciona margem na direita em 15%*/
+}
+
+.imgBeneficios {
+ width: 50%;
+
+}
