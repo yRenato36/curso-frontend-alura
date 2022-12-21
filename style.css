@@ -1,56 +1,132 @@
 body {
-	
+    background-color: white;
 }
 
-.principal {
-	background: #CCCCCC;
-	padding: 30px;
-}
-#banner {
-	width: 100%; /*colocando a largura da imagem em 100% da página*/
+header {
+    background: #BBBBBB;
+    padding: 20px 0px;
 }
 
-.principal-title {
-	padding-left: 20px;
+.caixaCentral {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+} 
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-
-.text-center{
-	text-align: center;
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-p {
-	text-align: center;
+nav a {
+    text-transform: uppercase; /*alterar textos para maiúsculo*/
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none; /*retira sublinhado do texto e qualquer decoração*/
 }
 
-/*para referenciar um id em css é usado o #(hashtag) + nome do id*/
-#missao {
-	font-size: 20px;
+/*adiciona uma ação com o evento de passar o mouse por cima do item*/
+nav a:hover {
+    color: yellow;
+    text-decoration: underline;
 }
 
-/*busca o que tem dentro de <em> com a tag <strong> para colocar em azul*/
-em strong {
-	color: blue;
+.produtos {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
-/*para referenciar uma classe em css é usado o .(ponto) + nome da classe*/
-.itens {
-	font-style: italic;
+.produtos li {
+    display: inline-block; /*coloca cada li(list item) da lista na mesma linha, além de criar um bloco para cada um*/
+    text-align: center;
+    width: 30%; /*distribui a distância entre cada bloco em 30%*/
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*coloca as propriedades dentro de uma caixa*/
+
+    /* forma mais completa
+    border-width: 2px;
+    border-color: black;
+    border-style: dashed;
+    */
+    border: 2px dashed black;
+    border-radius: 10px 10px 50px 50px;
+
+} 
+
+/*ação quando passar o mouse por cima*/
+.produtos li:hover {
+    border-color: #ff2626;
+}
+/*ação quando clicar no item*/
+.produtos li:active {
+    border-color: green;
 }
 
-.beneficios {
-	background: white;
-	padding: 20px; /*adiciona espaçamento em todos os lados*/
+/*ação quando passar o mouse por cima, irá alterar o tamanho do texto h2*/
+.produtos li:hover h2 {
+    font-size: 34px;
 }
 
-ul {
-	display: inline-block; /*coloca a imagem na mesma linha da lista*/
-	vertical-align: top; /*eleva a lista para o top */
-	width: 20%;
-	margin-right: 15%; /*adiciona margem na direita em 15%*/
+/*altera as propriedades dos textos dentro de produto em h2*/
+.produtos h2 {
+    font-size: 28px;
+    font-weight: bolder;
 }
 
-.imgBeneficios {
- width: 50%;
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+}
 
+.produto-descricao {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(Imagens/bg.png);
+    padding: 10px 0px;
+}
+.copyright {
+    color: white;
+    font-size: 15px;
+    margin: 20px 0px 0px;
+}
+
+main {
+    width: 940px; 
+    margin: 0 auto;
+}
+
+form  {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block; /*quebra os labels dentro do form em blocos*/
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block; /*quebra os inputs dentro do form em blocos*/
+    margin: 0 0 20px;
+    padding: 10px 25px; /*aumenta o espaçamento interno dos inputs, consequentemente aumenta o tamanho dos inputs*/
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0; 
 }
