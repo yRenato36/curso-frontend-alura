@@ -224,7 +224,7 @@ td, th {
 
 /*adiciona um carecte em css antes do começo do texto (esse caractere não é selecionável na página)*/
 .titulo-principal::before {
-    content: "[ ";k
+    content: "[ ";
 }
 
 /*adiciona um carecte em css depois do final do texto (esse caractere não é selecionável na página)*/
