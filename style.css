@@ -1,5 +1,6 @@
 body {
-    background-color: white;
+    /*background-color: white;*/
+    font-family: 'Montagu Slab', serif; /*utilizando a fonte importada da web*/
 }
 
 header {
@@ -39,10 +40,10 @@ nav a:hover {
 }
 
 .produtos {
-    position: relative;
+    /*position: relative;*/
     width: 940px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 50px 0;
 }
 
 .produtos li {
@@ -84,13 +85,14 @@ nav a:hover {
     font-weight: bolder;
 }
 
+.produto-descricao {
+    font-size: 18px;
+    /*margin-top: 10px;*/
+}
+
 .produto-preco {
     font-size: 22px;
     font-weight: bold;
-}
-
-.produto-descricao {
-    font-size: 18px;
     margin-top: 10px;
 }
 
@@ -103,11 +105,6 @@ footer {
     color: white;
     font-size: 15px;
     margin: 20px 0px 0px;
-}
-
-main {
-    width: 940px; 
-    margin: 0 auto;
 }
 
 form  {
@@ -130,3 +127,225 @@ form label, form legend {
 .checkbox {
     margin: 20px 0; 
 }
+
+.enviar {
+    width: 40%;
+    padding: 15px 0px;
+    background: rgb(40, 204, 40);
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 07px;
+    /*transition: 1s background; realiza uma transição de troca de cor no background do botão*/
+    cursor: pointer; /*indica que o item é clicável, muda o mouse para o icone de click(mãozinha)*/
+    transition: 1s all;
+}
+
+/*quando o mouse passar por cima do botão, seu background será alterado para um verde mais escuro*/
+.enviar:hover {
+    background-color: rgb(17, 138, 17);
+    transform: scale(1.05); /*aumenta a escala do elemento em 5%*/
+    /*transform: scale(1.05), rotate(20deg); aumenta o tamanho do elemento, além de gira-lo*/
+}
+
+table {
+    margin: 20px 0px 40px;
+}
+
+thead { 
+    background: rgb(21, 255, 72);
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black; /*adiciona uma borda em todos os itens da tabela*/
+    padding: 8px 15px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em; /*medidas em (em) são 2x maiores que o tamanho base em px*/
+    margin: 0 0 1em;
+    clear: left; /*limpa o float à esquerda*/
+}
+
+.principal {
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px; 
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+   
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left; /*destaca o elemento, onde outros elementos ficaram ao seu lago*/
+    margin: 0px 20px 20px 0px;
+}
+
+.mapa {
+    /*text-align: center;*/
+    padding: 3em 0;   
+    background: linear-gradient(rgb(255, 255, 255), gray);
+
+    /*
+    background: linear-gradient(25deg, red 50%, blue, yellow, orange, purple);
+    propriedade completa do gradiente linear ou radius
+    */
+}
+
+.mapa-conteudo {
+    width: 940px; 
+    margin: 0 auto;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+/*adiciona um carecte em css antes do começo do texto (esse caractere não é selecionável na página)*/
+.titulo-principal::before {
+    content: "[ ";k
+}
+
+/*adiciona um carecte em css depois do final do texto (esse caractere não é selecionável na página)*/
+.titulo-principal::after {
+    content: " ]";
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: gray;
+    /*
+    inset adiciona uma sombra interna ao elemento
+    box-shadow: inset 0 0 30px red;
+    */
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5; /*cria espaçamento entre os textos*/
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens:before {
+    content: "▷ ";
+}
+/*
+nth-child(2n) = adiciona propriedades a todos os elementos de número par da lista
+.itens:nth-child(2n) {
+    font-weight: bold;
+}
+
+last-child = adiciona propriedades ao último elemento da lista
+.itens:last-child {
+    font-weight: bold;
+}
+*/
+
+/*first-child = adiciona propriedades ao primeiro elemento da lista*/
+
+
+
+.imagem-beneficios {
+    width: 60%;
+    transition: 400ms;
+    opacity: 100%;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.705);
+    /*
+    é possível colocar mais de uma sombra em um mesmo elemento
+    box-shadow: 10px 10px 30px 20px rgba(17, 138, 17, 0.6), -10px -10px #ff2626;
+    */
+}
+
+/*quando passar o mouse por cima, a opacidade do elemento será reduzida para 70%*/
+.imagem-beneficios:hover {
+    opacity: 70%;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 480px){
+    .caixaCentral, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, imagem-beneficios {
+        width: 100%
+    }
+}
+
+/*
+-- > identifica o filho direto da tag main --
+main > p {
+    background-color: yellowgreen;
+}
+
+-- + identifica o próximo irmão, ou seja, o próximo elemento que está abaixo de da tag img --
+img + p {
+    background-color: green;
+}
+
+-- ~ aplica efeito em todos os seletores que estão após da tag img --
+img ~ p {
+    background-color: red;
+}
+
+-- seleção a partir da exclusão de caso, aplica efeitos em quem não tiver a missao como id --
+.principal p:not(#missao) {
+    background-color: aqua;
+}
+
+-- a função calc() realiza cálculos dentro de propriedades do css --
+.utensilios {
+    width: calc((40% (10 * 2))/12);
+}
+*/
+
+/*
+media queries: adicionam certo estilo na página de acordo com a condição entre ()
+nesse caso: para laguras máximas de 480px
+*/
+

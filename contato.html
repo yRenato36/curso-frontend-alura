@@ -42,7 +42,8 @@
             <textarea Class="input-padrao" id="mensagem" cols="65" rows="10" required></textarea>
 
             <fieldset><!--fieldset é usado para colocar em um grupo de tag/elementos que compôe um mesmo assunto-->
-                <legend>Como prefere o nosso contato?</legend><!--legend é usando para definir o títilo dentro do fieldset-->
+                <legend>Como prefere o nosso contato?</legend>
+                <!--legend é usando para definir o títilo dentro do fieldset-->
                 <!--
                 <label for="radio-email">Email</label>
                 <input type="radio" name="contato" value="email" id="radio-email">
@@ -53,11 +54,11 @@
                 <label for="radio-email">
                     <input type="radio" name="contato" value="email" id="radio-email"> Email
                 </label>
-                                
+
                 <label for="radio-telefone">
                     <input type="radio" name="contato" id="radio-telefone"> Telefone
                 </label>
-                
+
                 <label for="radio-whatsapp">
                     <input type="radio" name="contato" id="radio-whatsapp" checked> Whatsapp
                 </label>
@@ -68,7 +69,8 @@
                 <select>
                     <option>Manhã</option>
                     <option>Tarde</option>
-                    <option>Noite<option>
+                    <option>Noite
+                    <option>
                 </select>
             </div>
 
@@ -76,10 +78,33 @@
             <label Class="checkbox">
                 <input type="checkbox" checked>Gostaria de receber nossas novidades por Email?
             </label>
-            
+
             <!--realiza o envio dos dados do formulário-->
-            <input type="submit" value="Enviar Formulário">
+            <input type="submit" value="Enviar Formulário" class="enviar">
         </form>
+
+        <table>
+            <thead><!--cabeçalho para tabelas-->
+                <tr> <!--representa item do cabeçalho-->
+                    <th>Dia</th> <!--representa o item do cabeçalho-->
+                    <th>horário</th>
+                </tr>
+            </thead>
+            <tbody><!--corpo da labela-->
+                <tr><!--representa a linha da tabela-->
+                    <td>Segunda-Feira</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta-Ferira</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta-Feira</td>
+                    <td>8h - 20h</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
     <footer>
         <img src="Imagens/logo-branco.png" alt="logo da barbearia do renato versão branca">

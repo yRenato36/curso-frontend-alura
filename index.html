@@ -1,45 +1,102 @@
 <!DOCTYPE html> <!-- indica que será utilizado o html5 na estrutura da página-->
 
 <html lang="pt-br">
-	<head> <!--informações estruturais (apontamentos para o navegador) fica no head-->
-		<meta charset="UTF-8"> <!--permite o uso de acentuação e outros caracteres do português-->
-		<title>Barbearia</title>
-		<link rel="stylesheet" href="style-home.css">
-	</head>
-	
-	<body> <!--informações que serão exibidas na página ficam no body-->
-		<header>
-			<h1 Class="principal-title">Barbearia do Renato</h1>
-		</header>
-		
-		<img id="banner" src="Imagens/banner.jpg"> <!--adicionando imagem ao html-->
-		
-		<div Class="principal"> <!--divisões limitam a area de um conteúdo-->
-			<h2 Class="text-center">Sobre a Barbearia Alura</h2>
-				
-				<!--<strong> marca o texto em negrito-->
-			<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
 
-				<!--<em> marca o texto em itálico-->
-			<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+<head> <!--informações estruturais (apontamentos para o navegador) fica no head-->
+	<meta charset="UTF-8"> <!--permite o uso de acentuação e outros caracteres do português-->
+	<meta name="viewport" content="width=device-width">
+	<title>Barbearia</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
 
-			<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+	<!--link de importação de fontes-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz@16..144&display=swap" rel="stylesheet">
+
+</head>
+
+<body> <!--informações que serão exibidas na página ficam no body-->
+	<header>
+		<div class="caixaCentral">
+			<h1><img src="Imagens/logo.png"></h1>
+
+			<nav> <!--tag de navegação-->
+				<ul>
+					<li><a href="index.html">Início</a></li>
+					<li><a href="produtos.html">Nossos Produtos</a></li>
+					<li><a href="contato.html">Contatos</a></li>
+				</ul>
+			</nav>
 		</div>
-		
-		<div Class="beneficios">
-			<h3 Class="text-center">Benefícios</h3>
-			<ul> <!--Unordered List-->
-				<li Class="itens">Atendimento aos Clientes</li> <!--List Item-->
-				<li Class="itens">Espaço Diferenciado</li>
-				<li Class="itens">Localização</li>
-				<li Class="itens">Profissionais Qualificados</li>
-			</ul>
-			<img Class="imgBeneficios" src="Imagens/beneficios.jpg">
-		</div>
-		
-		<footer>
-			<img src="Imagens/logo-branco.png">
-			<p Class="copyright">&copy;Copyright Berbearia do Renato - 2022</p>
-		</footer>
-	</body>
+	</header>
+
+	<img class="banner" src="Imagens/banner.jpg"> <!--adicionando imagem ao html-->
+
+	<main>
+		<!--<p>TEXTO APENAS DE TESTE....</p>-->
+
+		<section Class="principal"> <!--sessões limitam/juntam umaa área de um conteúdo-->
+			<h2 Class="titulo-principal">Sobre a Barbearia Alura</h2>
+
+			<img class="utensilios" src="imagens/utensilios.jpg" alt="Utensiolios do barbeiro">
+
+			<!--<strong> marca o texto em negrito-->
+			<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor
+				para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos
+				clientes a cada dia.</p>
+
+			<!--<em> marca o texto em itálico-->
+			<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos
+						clientes".</strong></em></p>
+
+			<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui
+				padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+		</section>
+
+		<section class="mapa">
+			<h3 class="titulo-principal">Venha nos visitar!!</h3>
+			<p>Nosso estabelecimento está localizado no centro da cidade</p>
+
+			<!--iframe é usado para abrir uma janela externa, onde possui conteúdo da web ou de outro site-->
+			<div class="mapa-conteudo">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.4761839890703!2d-47.21055308536801!3d-23.
+					07965804986386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b4a41470d619%3A0x547f9a8f89cd1d1a!
+					2sR.%20Treze%20de%20Maio%2C%201557%20-%20Centro%2C%20Indaiatuba%20-%20SP%2C%2013333-080!5e0!3m2!1sen!2sbr!
+					4v1672089936281!5m2!1sen!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade">
+				</iframe>
+			</div>
+		</section>
+
+		<section Class="beneficios">
+			<h3 Class="titulo-principal">Benefícios</h3>
+
+			<div class="conteudo-beneficios">
+				<ul class="lista-beneficios"> <!--Unordered List-->
+					<li Class="itens">Atendimento aos Clientes</li> <!--List Item-->
+					<li Class="itens">Espaço Diferenciado</li>
+					<li Class="itens">Localização</li>
+					<li Class="itens">Profissionais Qualificados</li>
+					<li Class="itens">Pontualidade</li>
+					<li Class="itens">Limpeza</li>
+				</ul><img Class="imagem-beneficios" src="Imagens/beneficios.jpg">
+			</div>
+
+			<div class="video">
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/UPUsnEOo4_w"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen>
+				</iframe>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<img src="Imagens/logo-branco.png">
+		<p Class="copyright">&copy;Copyright Berbearia do Renato - 2022</p>
+	</footer>
+</body>
+
 </html>
